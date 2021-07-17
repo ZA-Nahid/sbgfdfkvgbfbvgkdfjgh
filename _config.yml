@@ -1,0 +1,169 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: QuwsarOhi
+email: quwsarohi@gmail.com
+og_image: /assets/images/site-logo.jpg
+# Photo by Michael Dziedzic on Unsplash
+# link: https://unsplash.com/photos/0n70cnyOFgc
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Towards Computer Science
+
+
+#twitter_username: username
+#github_username: QuwsarOhi
+minimal_mistakes_skin: contrast
+search: false
+
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 3                           # amount of posts to show
+paginate_path: /page:num/
+timezone: BD                          # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+classes: wide
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  #- jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Abu Quwsar Ohi"
+  avatar : "/assets/images/bio-photo1.jpg"
+  bio    : "Research Assistant,<br>Bangladesh University of Business & Technology."
+  links:
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://quwsarohi.github.io"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/"
+    - label: "Dhaka, Bangladesh"
+      icon: "fas fa-map-marker-alt"
+      url: "#"
+    - label: "Mail"
+      icon: "far fa-envelope"
+      url: "mailto:quwsarohi@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin-in"
+      url: "https://www.linkedin.com/in/quwsarohi/"
+    - label: "Scholar"
+      icon: "./assets/icons/google-scholar.svg"
+      url: "https://scholar.google.com/citations?user=PZxOxw8AAAAJ&hl=en"
+    - label: "Orcid"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0000-0001-7375-9040"
+    - label: "ResearchGate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Abu_Ohi"
+    - label: "GitHub"
+      icon: "fab fa-github" #"fab fa-fw fa-github"
+      url: "https://github.com/QuwsarOhi"
+    - label: "Facebook"
+      icon: "fab fa-facebook-f"
+      url: "https://facebook.com/ohi.quwsar"
+
+footer:
+  links:
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/"
+    - label: "Mail"
+      icon: "far fa-envelope"
+      url: "mailto:quwsarohi@gmail.com"
+    - label: "Orcid"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0000-0001-7375-9040"
+    #- label: "Last updated: Jan 8, 2021"
+    #  icon: "fa fa-clock-o"
+    #  url: "#"
+
+
+
+#defaults:
+  # _posts
+  #-------
+  #- scope:
+  #    path: ""
+  #    type: posts
+  #  values:
+  #    layout: single
+  #    author_profile: true
+  #    read_time: false
+  #    comments: false
+  #    share: false
+  #    related: false
+  #-------
+  # _pages
+  #-------
+  #- scope:
+  #    path: "_pages"
+  #    type: pages
+  #  values:
+  #    layout: single
+  #    author_profile: true
+
+
+#category_archive:
+#  type: liquid
+#  path: /categories/
+#tag_archive:
+#  type: liquid
+#  path: /tags/
+
+
+#comments:
+#  provider: "facebook"
+#  facebook:
+#    appid: # optional
+#    num_posts: 5 #(default)
+#    colorscheme: "dark" #(default), "dark"
+
+#sidebar:
+#  - title: "Title"
+#    image: http://placehold.it/350x250
+#    image_alt: "image"
+#    text: "Some text here."
+#  - title: "Another Title"
+#    text: "More text here."
+#    nav: sidebar-sample
